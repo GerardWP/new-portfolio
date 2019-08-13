@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    z-index: 8;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    height: 4rem;
+    padding: 1px 2rem 0;
+    background: #fff;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+}
+
+.header img {
+    width: 200px;
+}
+
+
+.b-top,
+.b-right,
+.b-bottom,
+.b-left {
+    position: fixed;
+    z-index: 9;
+    background: rgb(255, 255, 255);
+}
+
+.b-top {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2rem;
+}
+
+.b-top::after {
+    position: absolute;
+    content: "";
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    height: 1px;
+    background: #000;
+}
+
+.b-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+}
+
+.b-bottom::after {
+    position: absolute;
+    content: "";
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    height: 1px;
+    background: #000;
+}
+
+.b-left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rem;
+}
+
+.b-left::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 2rem;
+    bottom: 2rem;
+    width: 1px;
+    background: #000;
+}
+
+.b-right {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rem;
+}
+
+.b-right::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2rem;
+    bottom: 2rem;
+    width: 1px;
+    background: #000;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        height: 4rem;
+    }
+
+    .b-bottom,
+    .b-top {
+        height: 1rem;
+    }
+
+    .b-top::after {
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+        height: 1px;
+    }
+
+    .b-bottom::after {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        height: 1px;
+    }
+
+    .b-left,
+    .b-right {
+        width: 1rem;
+    }
+
+    .b-left::after {
+        top: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .b-right::after {
+        top: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+}
