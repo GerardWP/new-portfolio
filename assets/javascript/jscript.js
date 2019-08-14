@@ -14,3 +14,21 @@ $(document).ready(function () {
         $("div.menu").toggleClass("menu-clicked");
     });
 });
+
+$("a.about").on("click", function () {
+
+    $("div.about-me").toggleClass("about-me-clicked");
+
+});
+
+$("a.about-2").on("click", function () {
+
+    $("div.about-me").toggleClass("about-me-clicked");
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+    $("div.menu").toggleClass("menu-clicked");
+});
+
+$("#about-close").on("click", function () {
+
+    $("div.about-me").toggleClass("about-me-clicked");
+});
