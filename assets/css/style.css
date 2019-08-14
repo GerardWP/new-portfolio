@@ -6,17 +6,17 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    font-family: 'Arimo', sans-serif;
 }
 
 
 body {
     margin: 0;
-    font-family: 'Muli', sans-serif;
 }
+
 
 h1,
 h3 {
-    font-family: 'Muli', sans-serif;
     font-weight: lighter;
 }
 
@@ -25,7 +25,7 @@ h1 {
 }
 
 h3 {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .header {
@@ -63,17 +63,45 @@ h3 {
     width: 245px;
     justify-content: space-between;
     padding-left: 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
     position: absolute;
     left: 1.7rem;
-    bottom: .2rem;
+    bottom: .14rem;
 }
 
+.menu ul a,
+.header ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu ul a:active,
+.menu ul a:hover,
+.header ul a:active,
+.header ul a:hover {
+    text-decoration: underline;
+}
+
+ul a.projects {
+    text-decoration: underline;
+}
+
+
+
 #clock {
-    font-size: 1.1em;
+    font-size: 1.2em;
     position: absolute;
     right: 1.7rem;
-    bottom: 1.3rem;
+    bottom: 1.25rem;
+}
+
+#test-btn {
+    position: absolute;
+    right: 1.1rem;
+    bottom: 1.25rem;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
 }
 
 .b-top,
@@ -154,7 +182,7 @@ h3 {
 }
 
 .page-content {
-    margin: 3.5rem;
+    margin: 4rem;
 }
 
 .info {
@@ -166,13 +194,18 @@ h3 {
 .menu {
     background: #fff;
     border-top: 1px solid #000;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     left: 2rem;
     right: 2rem;
-    bottom: -3.6rem;
+    bottom: -4.6rem;
     height: auto;
+    transition-duration: 300ms;
+}
+
+.menu-clicked {
+    bottom: 6rem !important;
 }
 
 .menu ul {
@@ -184,10 +217,6 @@ h3 {
     padding-left: 1.5em;
 }
 
-#test-btn {
-    cursor: pointer;
-}
-
 
 
 @media screen and (max-width: 1000px) {
@@ -197,6 +226,23 @@ h3 {
         right: 1rem;
         bottom: 1rem;
         height: 4rem;
+        justify-content: flex-start;
+    }
+
+    .header img {
+        max-width: 200px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    #clock {
+        display: none;
+    }
+
+    #test-btn {
+        display: block;
     }
 
     .menu {
@@ -204,6 +250,10 @@ h3 {
         right: 1rem;
         bottom: -4.6rem;
         height: auto;
+    }
+
+    .menu-clicked {
+        bottom: 5rem !important;
     }
 
     .page-content {
