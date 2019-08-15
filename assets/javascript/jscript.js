@@ -33,6 +33,12 @@ $("#about-close").on("click", function () {
     $("div.about-me").toggleClass("about-me-clicked");
 });
 
+$(".menu img").on("click", function () {
+
+    $("div.menu").toggleClass("menu-clicked");
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+});
+
 // waves
 
 ! function (t, e) {
