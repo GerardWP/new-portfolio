@@ -15,6 +15,15 @@ $(document).ready(function () {
     });
 });
 
+$(window).resize(function () {
+    var viewportWidth = $(window).width();
+
+    if (viewportWidth > 1000) {
+        $("div.menu").removeClass("menu-clicked");
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').removeClass('open');
+    }
+});
+
 $("a.about").on("click", function () {
 
     $("div.about-me").toggleClass("about-me-clicked");
@@ -28,15 +37,14 @@ $("a.about-2").on("click", function () {
     $("div.menu").toggleClass("menu-clicked");
 });
 
+$("a.menu-link-2").on("click", function () {
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
+    $("div.menu").toggleClass("menu-clicked");
+});
+
 $("#about-close").on("click", function () {
 
     $("div.about-me").toggleClass("about-me-clicked");
-});
-
-$(".menu img").on("click", function () {
-
-    $("div.menu").toggleClass("menu-clicked");
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').toggleClass('open');
 });
 
 // waves
