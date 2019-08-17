@@ -289,12 +289,12 @@ grid gutter width and height for mobile */
 
 .page-content-1 {
     margin: 4rem 4rem 8rem;
+    margin-bottom: 2000px;
     /* display: flex; */
     display: grid;
     grid-template-columns: 400px 1fr 1fr;
     grid-template-rows: 180px 180px;
     grid-gap: 30px;
-    margin-bottom: 2000px;
 }
 
 .info {
@@ -595,6 +595,11 @@ grid gutter width and height for mobile */
         right: 4rem;
         bottom: 4rem;
         height: 4rem;
+    }
+
+    .page-content-1 {
+        margin: 8rem 8rem 12rem;
+        margin-bottom: 2000px;
     }
 
     .about-me {
