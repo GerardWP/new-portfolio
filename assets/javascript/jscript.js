@@ -15,6 +15,27 @@ $(document).ready(function () {
     });
 });
 
+
+
+var resizeTimer;
+
+function resizeFunction() {
+    var viewportWidth = $(window).width();
+
+    if (viewportWidth > 1000) {
+        $("div.menu").removeClass("menu-clicked");
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').removeClass('open');
+    }
+};
+
+
+$(window).resize(function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(resizeFunction, 450);
+});
+
+
+
 $(window).resize(function () {
     var viewportWidth = $(window).width();
 
