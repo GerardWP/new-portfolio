@@ -1,3 +1,5 @@
+// using moment js to display time in header on desktop view
+
 function updateClock() {
     var theTime = moment().format('LT');
     $('#clock').html(theTime);
