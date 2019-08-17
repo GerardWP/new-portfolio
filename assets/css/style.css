@@ -295,6 +295,7 @@ grid gutter width and height for mobile */
     grid-template-columns: 400px 1fr 1fr;
     grid-template-rows: 180px 180px;
     grid-gap: 30px;
+    max-width: 1900px;
 }
 
 .info {
@@ -598,7 +599,7 @@ grid gutter width and height for mobile */
     }
 
     .page-content-1 {
-        margin: 8rem 8rem 12rem;
+        margin: 8rem auto 12rem;
         margin-bottom: 2000px;
     }
 
