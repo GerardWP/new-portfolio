@@ -289,11 +289,11 @@ grid gutter width and height for mobile */
 
 .page-content-1 {
     margin: 4rem 4rem 8rem;
-    margin-bottom: 2000px;
+    /* margin-bottom: 2000px; */
     /* display: flex; */
     display: grid;
     grid-template-columns: 400px 1fr 1fr;
-    grid-template-rows: 180px 180px;
+    grid-template-rows: 200px 20px 250px 250px;
     grid-gap: 30px;
 }
 
@@ -312,21 +312,113 @@ grid gutter width and height for mobile */
     grid-column: 1/2;
 }
 
-.title-1 {
-    grid-column: 2/4;
-    grid-row: 1/3;
+.p-box {
     background: rgb(35, 69, 96);
     color: #fff;
-    /* border-top-left-radius: 70px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-.project-1-info {
+.p-box h1 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.p-box a {
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: auto; */
+    font-size: 1em;
+    transition-duration: 250ms;
+}
+
+.p-box a:hover {
+    color: rgb(220, 255, 46);
+    /* background: #86ff52a1; */
+
+}
+
+.title-1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background: url(../images/train-bg.jpg) no-repeat center #222;
+    background-size: cover;
+}
+
+.title-2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background: url(../images/crystal-bg.jpg) no-repeat center #222;
+    background-size: cover;
+}
+
+.title-3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background: url(../images/Untitled-4.jpg) no-repeat center #222;
+    background-size: cover;
+}
+
+.title-4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: url(../images/eatsh-bg.jpg) no-repeat center #222;
+    background-size: cover;
+}
+
+.title-5 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: url(../images/gif-bg.jpg) no-repeat center #222;
+    background-size: cover;
+}
+
+.title-6 {
     grid-column: 1/2;
-    grid-row: 2/3;
-    background: rgb(35, 69, 96);
+    grid-row: 2/4;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.title-6 p {
+    text-align: right;
+    padding-left: 15px;
+}
+
+.title-7 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+
+}
+
+.project-info {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 100px;
+    background: #036285;
+    color: #fff;
+}
+
+.info-wrap {
+    max-width: 600px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+#p4 {
+    margin-bottom: 100px;
 }
 
 
@@ -467,8 +559,51 @@ grid gutter width and height for mobile */
     }
 }
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 1000px) {
+
+    .page-content-1 {
+        /* grid-template-columns: 400px 1fr; */
+        grid-template-rows: 200px 20px 250px 250px 250px 250px 250px;
+    }
+
+    .title-1 {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+
+    .title-2 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+    .title-3 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+
+    .title-4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .title-5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+
+    .title-7 {
+        grid-column: 2/4;
+        grid-row: 5/6;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
 
     .header {
         left: 1rem;
@@ -499,17 +634,8 @@ grid gutter width and height for mobile */
         margin-bottom: 1rem;
     }
 
-    .title-1 {
-        min-height: 180px;
-        margin-bottom: 1rem;
-        border-top-left-radius: 0px;
 
-    }
 
-    .project-1-info {
-        min-height: 180px;
-        margin-bottom: 1rem;
-    }
 
     .about-me-clicked {
         left: 1rem !important;
@@ -548,6 +674,15 @@ grid gutter width and height for mobile */
         margin-bottom: 1500px;
         display: flex;
         flex-direction: column;
+    }
+
+    .p-box {
+        min-height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-6 {
+        min-height: auto;
     }
 
     .b-bottom,
