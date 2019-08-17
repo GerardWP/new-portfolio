@@ -595,16 +595,15 @@ grid gutter width and height for mobile */
         right: 4rem;
         bottom: 4rem;
         height: 4rem;
-        justify-content: flex-start;
-    }
-
-    h3 {
-        text-align: center;
     }
 
     .about-me {
         top: 4rem;
         bottom: 8rem;
+    }
+
+    .about-me-clicked {
+        left: 4rem !important;
     }
 
     .b-bottom,
