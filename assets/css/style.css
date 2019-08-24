@@ -397,6 +397,8 @@ grid gutter width and height for mobile */
 .title-7 {
     grid-column: 3/4;
     grid-row: 4/5;
+    background: url(../images/liri.jpg) no-repeat center #222;
+    background-size: cover;
 
 }
 
