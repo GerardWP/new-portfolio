@@ -290,7 +290,7 @@ grid gutter width and height for mobile */
   /* display: flex; */
   display: grid;
   grid-template-columns: 400px 1fr 1fr;
-  grid-template-rows: 200px 20px 250px 250px;
+  grid-template-rows: 200px 20px 250px 250px 250px;
   grid-gap: 30px;
 }
 
@@ -405,9 +405,11 @@ grid gutter width and height for mobile */
 }
 
 .title-8 {
-  /* grid-column: 3/4;
-    grid-row: 4/5; */
   background: url(../images/bamazon.jpg) no-repeat center #222;
+  background-size: cover;
+}
+.title-9 {
+  background: url(../images/ffinder.jpg) no-repeat center #222;
   background-size: cover;
 }
 
