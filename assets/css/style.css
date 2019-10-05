@@ -300,12 +300,14 @@ grid gutter width and height for mobile */
     justify-content: center; */
   flex: 1;
   color: #fff;
-  background: linear-gradient(-45deg,
-      #ffe208,
-      #ee7752,
-      #e73c7e,
-      #23a6d5,
-      #23f4c3);
+  background: linear-gradient(
+    -45deg,
+    #ffe208,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23f4c3
+  );
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   padding: 2rem;
@@ -414,6 +416,11 @@ grid gutter width and height for mobile */
 
 .title-10 {
   background: url(../images/mcgeralds.jpg) no-repeat center #222;
+  background-size: cover;
+}
+
+.title-11 {
+  background: url(../images/staxx.jpg) no-repeat center #222;
   background-size: cover;
 }
 
